@@ -15,7 +15,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 
-
 import java.io.File;
 import java.lang.module.Configuration;
 import java.util.ArrayList;
