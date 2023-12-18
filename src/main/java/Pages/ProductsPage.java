@@ -10,6 +10,8 @@ public class ProductsPage extends BasePage{
     private WebElement searchBox;
     @FindBy(xpath = "//h2[@class='title text-center']")
     private WebElement allProductsHeader;
+    @FindBy(id = "submit_search")
+    private WebElement submitBtn;
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -18,6 +20,6 @@ public class ProductsPage extends BasePage{
     }
     public void setSearchBox(String wear){
         searchBox.sendKeys(wear);
-        searchBox.sendKeys(Keys.ENTER);
+        submitBtn.click();
     }
 }
